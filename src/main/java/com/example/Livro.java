@@ -22,4 +22,12 @@ class Livro {
     public int getAno() {
         return ano;
     }
+    
+    public String infoLivro() {
+        StringBuilder il = new StringBuilder();
+        il.append("Título: " + this.getTitulo() + ", ");
+        il.append("Autor: " + this.getAutor() + ", ");
+        il.append("Ano: " + this.getAno() + ".\n");
+        return il.toString();
+    }
 }
